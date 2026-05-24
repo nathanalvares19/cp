@@ -1,0 +1,30 @@
+{
+  "files.associations": {
+    "cmath": "cpp",
+    "iomanip": "cpp",
+    "ios": "cpp",
+    "iostream": "cpp",
+    "xstring": "cpp",
+    "tuple": "cpp",
+    "utility": "cpp",
+    "chrono": "cpp",
+    "deque": "cpp",
+    "format": "cpp",
+    "forward_list": "cpp",
+    "initializer_list": "cpp",
+    "list": "cpp",
+    "vector": "cpp",
+    "xhash": "cpp",
+    "xtree": "cpp",
+    "xutility": "cpp",
+    "algorithm": "cpp",
+    "limits": "cpp",
+    "bitset": "cpp",
+    "iterator": "cpp",
+    "unordered_map": "cpp",
+    "cstdlib": "cpp",
+    "string": "cpp",
+    "stdexcept": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
+}

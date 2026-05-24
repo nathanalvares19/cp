@@ -1,0 +1,48 @@
+int binpow(int base, int exp, int mod = -1) {
+    int result = 1;
+
+    if (mod != -1)
+        base %= mod;
+
+    while (exp > 0) {
+        if (exp & 1) {
+            if (mod == -1)
+                result *= base;
+            else
+                result = (result * base) % mod;
+        }
+
+        if (mod == -1)
+            base *= base;
+        else
+            base = (base * base) % mod;
+
+        exp >>= 1;
+    }
+    return result;
+}
+
+vector<bool> sieve(int N) {
+    vector<bool> isPrime(N + 1, true);
+    isPrime[0] = isPrime[1] = false;
+
+    for (int i = 2; i * i <= N; i++) {
+        if (isPrime[i]) {
+            for (int j = i * i; j <= N; j += i) {
+                isPrime[j] = false;
+            }
+        }
+    }
+    return isPrime;
+}
+
+
+
+void pv(vector<int> a)
+{
+    for (auto el : a)
+    {
+        cout << el << " ";
+    }
+    cout << "\n";
+}
